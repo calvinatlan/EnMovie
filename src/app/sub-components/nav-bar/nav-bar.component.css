@@ -1,3 +1,9 @@
+img{
+    width: 75px;
+}
+
+/*Vertical*/
+
 .navbar-wrap.vert{
     height: 100%;
     width: 200px;
@@ -11,9 +17,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-img{
-    width: 75px;
 }
 .vert>.navbar>a>img.st{
     margin-top: 5px;
@@ -33,4 +36,38 @@ img{
 }
 .vert>.navbar>a>img.bio{
     margin-top: 12px;
+}
+
+/*Horizontal*/
+.ph{
+    width: 100px;
+}
+.navbar-wrap.hor{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.hor>.navbar>a>img.home{
+    margin-bottom: 100px;
+}
+.hor>.navbar>a>img.st{
+    margin-bottom: 85px;
+}
+.hor>.navbar>a>img.vd{
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+.hor>.navbar>a>img.ins{
+    margin-bottom: 9px;
+}
+.hor>.navbar>a>img.con{
+    margin-bottom: 85px;
+}
+.hor>.navbar>a>img.pre{
+    margin-bottom: 85px;
+}
+.hor>.navbar>a>img.bio{
+    margin-bottom: 85px;
 }

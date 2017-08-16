@@ -1,4 +1,4 @@
-<div class="navbar-wrap" [ngClass]="{vert: pos != 'horizontal'}">
+<div class="navbar-wrap" [ngClass]="{vert: pos != 'horizontal', hor: pos == 'horizontal'}">
 <div class="navbar">
     <a routerLink="/home" routerLinkActive="active">
         <img class="home" src="assets/navbar/home.png" />
@@ -22,4 +22,5 @@
         <img class="bio" src="assets/navbar/biography.png" />
     </a>
 </div>
+<div *ngIf="pos =='horizontal'" class="ph"> </div>
 </div>
