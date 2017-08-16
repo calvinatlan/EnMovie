@@ -1,0 +1,8 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/background/presentation.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
+}

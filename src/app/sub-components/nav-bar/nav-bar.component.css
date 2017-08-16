@@ -1,0 +1,36 @@
+.navbar-wrap.vert{
+    height: 100%;
+    width: 200px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.vert>.navbar{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img{
+    width: 75px;
+}
+.vert>.navbar>a>img.st{
+    margin-top: 5px;
+}
+.vert>.navbar>a>img.vd{
+    margin-top: 8px;
+}
+.vert>.navbar>a>img.ins{
+    margin-top: -52px;
+    margin-left: -10px;
+}
+.vert>.navbar>a>img.con{
+    margin-top: -75px;
+}
+.vert>.navbar>a>img.pre{
+    margin-top: 14px;
+}
+.vert>.navbar>a>img.bio{
+    margin-top: 12px;
+}
