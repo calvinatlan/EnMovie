@@ -1,0 +1,89 @@
+.bg{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/background/nda.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+}
+.shadows{
+    opacity: 0.7;
+    position:fixed;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    animation: shadow-animation 30s 0s linear infinite;
+}
+img.cable{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-91%);
+}
+img.agree{
+    position: fixed;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.nda{
+    position: fixed;
+    font-family: 'helvetica';
+    color: white;
+
+
+    display: block;
+    top: 5%;
+    left: 46%;
+    margin-left: -175px;
+    font-size: 13px;
+    width: 450px;
+    height: 75%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255,255,255,0
+    );
+    text-align: center;
+    padding: 5px 10px;
+    z-index: 10;
+}
+.nda>.nda-text>p{
+    position: relative;
+    z-index:1;
+}
+.accept{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+}
+a{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+@keyframes shadow-animation{
+    0%{transform: translate(0,0);}
+    50%{transform: translate(25%,-25%);
+        opacity: 0;
+    }
+    51%{transform: translate(-25%,25%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 0.7;
+    }
+}

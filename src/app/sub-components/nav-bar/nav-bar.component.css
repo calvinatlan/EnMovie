@@ -1,0 +1,84 @@
+img{
+    width: 75px;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+.navbar{
+    z-index: 1;
+}
+
+/*Vertical*/
+
+.navbar-wrap.vert{
+    height: 100%;
+    width: 200px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.vert>.navbar{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.vert>.navbar>a>img.st{
+    margin-top: 5px;
+}
+.vert>.navbar>a>img.vd{
+    margin-top: 8px;
+}
+.vert>.navbar>a>img.ins{
+    margin-top: -52px;
+    margin-left: -10px;
+}
+.vert>.navbar>a>img.con{
+    margin-top: -75px;
+}
+.vert>.navbar>a>img.pre{
+    margin-top: 14px;
+}
+.vert>.navbar>a>img.bio{
+    margin-top: 12px;
+}
+
+/*Horizontal*/
+.navbar-wrap.hor{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.hor>.navbar>a>img.home{
+    margin-bottom: 100px;
+}
+.hor>.navbar>a>img.st{
+    margin-bottom: 85px;
+}
+.hor>.navbar>a>img.vd{
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+.hor>.navbar>a>img.ins{
+    margin-bottom: 9px;
+    margin-right: 5px;
+}
+.hor>.navbar>a>img.con{
+    margin-bottom: 85px;
+}
+.hor>.navbar>a>img.pre{
+    margin-bottom: 85px;
+}
+.hor>.navbar>a>img.bio{
+    margin-bottom: 85px;
+}
+a.contact{
+    z-index: 2;
+}
+a.inspiration{
+    z-index: 1;
+}

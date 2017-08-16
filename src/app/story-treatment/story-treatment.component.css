@@ -1,0 +1,43 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/background/story-treatment.png");
+    background-size: cover;
+    background-position: center;
+}
+.here{
+    position:absolute;
+    width: 100%;
+    bottom:10px;
+}
+a{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+a>img{
+    display:block;
+    margin: 0 auto;
+    width: 150px;
+}
+a>img:hover{
+    transform: scale(1.1);
+}
+.perso{
+    position: fixed;
+    width: 20%;
+    min-width: 300px;
+    bottom: 0;
+    transform: translateX(100%);
+    z-index: 5;
+}
+.bird{
+    position: fixed;
+    height: 140%;
+    opacity: .32;
+    transform: rotate(45deg) translateX(-100%) translateY(150%);
+    animation: fly 20s linear infinite;
+}
+@keyframes fly{
+    95%, 100% {transform: rotate(45deg) translateX(100%) translateY(-200%);}
+}

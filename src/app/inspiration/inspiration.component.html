@@ -1,0 +1,29 @@
+<div class="modal-bg" *ngIf="modalActive" (click)="exit()">
+    <div class="modal-container">
+        <div class="leftArrow" (click)="decrement($event)"> < </div>
+        <img class="modal" [src]="'assets/inspiration/'+category+'/'+index+'.jpg'" (click)="increment($event)" />
+        <div class="rightArrow" (click)="increment($event)"> > </div>
+    </div>
+</div>
+<div class="bg">
+    <app-nav-bar></app-nav-bar>
+    <app-en-logo></app-en-logo>
+    <div class="container">
+        <img class="inspiration" src="assets/inspiration.png" />
+    </div>
+    <div class="links">
+        <div class="empty"></div>
+        <img class="en" src="assets/inspiration/en.png" (click)="openModal($event)" />
+        <img class="pentu" src="assets/inspiration/pentu.png" (click)="openModal($event)" />
+        <img class="olyan" src="assets/inspiration/olyan.png" (click)="openModal($event)" />
+        <img class="villagers" src="assets/inspiration/villagers.png" (click)="openModal($event)" />
+        <div class="environment" (click)="openModal($event)">
+            <img class="environment" src="assets/inspiration/environment.png" />
+        </div>
+    </div>
+</div>
+<audio
+  src="assets/audio/thunder.mp3"
+  autoplay
+  loop>
+</audio>

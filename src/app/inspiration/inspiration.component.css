@@ -1,0 +1,89 @@
+.bg{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/background/inspiration.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+}
+.modal-bg{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+.modal-container{
+    display: flex;
+    flex-direciton: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.leftArrow, .rightArrow{
+    color: white;
+    font-size: 72px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.modal{
+    height: 75%;
+    background-color: white;
+}
+.container{
+    position: fixed;
+    top: 150px;
+    width: 100%;
+}
+img.inspiration{
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+}
+.links{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.empty{
+    width: 150px;
+}
+.links>img{
+    cursor: pointer;
+}
+img.en{
+    margin-right: 4%;
+    display: block;
+    width: 50px;
+}
+img.pentu{
+    margin-right: 3%;
+    display: block;
+    width: 77px;
+}
+img.olyan{
+    margin-right: 3%;
+    display: block;
+    width: 100px;
+}
+img.villagers{
+    margin-right: 1%;
+    display: block;
+    width: 75px;
+}
+div.environment{
+    cursor: pointer;
+    display: block;
+    margin-right: 1%;
+    margin-left: 5%;
+    height: 100%;
+}
+img.environment{
+    display: block;
+    height: 10px;
+}
