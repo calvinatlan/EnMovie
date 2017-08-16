@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { NavBarComponent } from './sub-components/nav-bar/nav-bar.component';
 import { EnLogoComponent } from './sub-components/en-logo/en-logo.component';
+import { VisualDevelopmentModalComponent } from './sub-components/visual-development-modal/visual-development-modal.component';
 
 const appRoutes: Routes = [
     {path: 'nda', component: NdaComponent},
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     BiographyComponent,
     ContactComponent,
     NavBarComponent,
-    EnLogoComponent
+    EnLogoComponent,
+    VisualDevelopmentModalComponent
   ],
   imports: [
       BrowserModule,
