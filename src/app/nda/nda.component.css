@@ -6,3 +6,30 @@
     background-position: center;
     background-position-y: top;
 }
+.nda{
+    height: 100%;
+}
+.nda-text{
+    margin: 10px auto;
+    font-size: 10px;
+    font-family: roboto;
+    width: 400px;
+    height: 80%;
+    text-align: center;
+    overflow: scroll;
+    background-color: rgba(255,255,255,0.7);
+    border: 3px solid rgba(0,0,0,0.3);
+    z-index: 1;
+}
+img.cable{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-91%);
+}
+img.agree{
+    position: fixed;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
