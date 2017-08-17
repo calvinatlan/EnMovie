@@ -1,0 +1,55 @@
+.bg{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/background/inspiration.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+}
+.container{
+    position: fixed;
+    top: 150px;
+    width: 100%;
+}
+img.inspiration{
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+}
+.links{
+    position: fixed;
+    width: 100%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.empty{
+    width: 150px;
+}
+img.en{
+    margin-right: 4%;
+    display: block;
+    width: 80px;
+}
+img.pentu{
+    margin-right: 3%;
+    display: block;
+    width: 100px;
+}
+img.olyan{
+    margin-right: 3%;
+    display: block;
+    width: 100px;
+}
+img.villagers{
+    margin-right: 1%;
+    display: block;
+    width: 100px;
+}
+img.environment{
+    margin-right: 1%;
+    display: block;
+    width: 400px;
+}

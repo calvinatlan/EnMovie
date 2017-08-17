@@ -1,4 +1,4 @@
-<div class="navbar-wrap" [ngClass]="{vert: pos != 'horizontal', hor: pos == 'horizontal'}">
+<div class="navbar-wrap" [ngClass]="{vert: pos != 'horizontal' && pos != 'split', hor: pos == 'horizontal', split: pos == 'split'}">
 <div class="navbar">
     <a routerLink="/home" routerLinkActive="active">
         <img class="home" src="assets/navbar/home.png" />

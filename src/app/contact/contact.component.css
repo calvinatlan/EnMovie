@@ -1,0 +1,22 @@
+.bg{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/background/contact.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+}
+img{
+    position: fixed;
+}
+img.olivier{
+    left: 50%;
+    top: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+}
+img.calvin{
+    right: 5%;
+    bottom: 5%;
+    width: 10%;
+}

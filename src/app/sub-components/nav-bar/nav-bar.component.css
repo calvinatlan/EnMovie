@@ -1,6 +1,9 @@
 img{
     width: 75px;
 }
+img:hover{
+    transform: scale(1.1);
+}
 
 .navbar{
     z-index: 1;
