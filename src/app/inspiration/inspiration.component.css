@@ -20,7 +20,7 @@ img.inspiration{
 .links{
     position: fixed;
     width: 100%;
-    bottom: 5%;
+    bottom: 0;
     display: flex;
     justify-content: center;
     height: 300px;
@@ -28,15 +28,18 @@ img.inspiration{
 .empty{
     width: 150px;
 }
+.links>img{
+    cursor: pointer;
+}
 img.en{
     margin-right: 4%;
     display: block;
-    width: 80px;
+    width: 50px;
 }
 img.pentu{
     margin-right: 3%;
     display: block;
-    width: 100px;
+    width: 77px;
 }
 img.olyan{
     margin-right: 3%;
@@ -46,10 +49,16 @@ img.olyan{
 img.villagers{
     margin-right: 1%;
     display: block;
-    width: 100px;
+    width: 75px;
+}
+div.environment{
+    cursor: pointer;
+    display: block;
+    margin-right: 1%;
+    margin-left: 5%;
+    height: 100%;
 }
 img.environment{
-    margin-right: 1%;
     display: block;
-    width: 400px;
+    height: 10px;
 }

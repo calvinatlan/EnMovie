@@ -75,3 +75,6 @@ img:hover{
 .hor>.navbar>a>img.bio{
     margin-bottom: 85px;
 }
+a.contact{
+    z-index: 1;
+}

@@ -23,13 +23,21 @@ a>img{
 a>img:hover{
     transform: scale(1.1);
 }
+.perso{
+    position: fixed;
+    width: 20%;
+    min-width: 300px;
+    bottom: 0;
+    transform: translateX(100%);
+    z-index: 5;
+}
 .bird{
     position: fixed;
     height: 140%;
     opacity: .32;
     transform: rotate(45deg) translateX(-100%) translateY(150%);
-    animation: fly 25s linear 1s infinite;
+    animation: fly 20s linear infinite;
 }
 @keyframes fly{
-    50%, 100% {transform: rotate(45deg) translateX(100%) translateY(-200%);}
+    95%, 100% {transform: rotate(45deg) translateX(100%) translateY(-200%);}
 }

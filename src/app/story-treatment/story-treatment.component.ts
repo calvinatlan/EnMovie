@@ -10,6 +10,8 @@ export class StoryTreatmentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      let vol: any = document.querySelector('#waterfall');
+      vol.volume = 0.2;
   }
 
 }
