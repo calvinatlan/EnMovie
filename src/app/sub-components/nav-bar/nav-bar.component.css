@@ -65,6 +65,7 @@ img:hover{
 }
 .hor>.navbar>a>img.ins{
     margin-bottom: 9px;
+    margin-right: 5px;
 }
 .hor>.navbar>a>img.con{
     margin-bottom: 85px;
@@ -76,5 +77,8 @@ img:hover{
     margin-bottom: 85px;
 }
 a.contact{
+    z-index: 2;
+}
+a.inspiration{
     z-index: 1;
 }
