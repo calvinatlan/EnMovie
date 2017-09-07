@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NavBarComponent } from './sub-components/nav-bar/nav-bar.component';
 import { EnLogoComponent } from './sub-components/en-logo/en-logo.component';
 import { VisualDevelopmentModalComponent } from './sub-components/visual-development-modal/visual-development-modal.component';
+import { AllImagesComponent } from './sub-components/all-images/all-images.component';
 
 const appRoutes: Routes = [
     {path: 'nda', component: NdaComponent},
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
     ContactComponent,
     NavBarComponent,
     EnLogoComponent,
-    VisualDevelopmentModalComponent
+    VisualDevelopmentModalComponent,
+    AllImagesComponent
   ],
   imports: [
       BrowserModule,

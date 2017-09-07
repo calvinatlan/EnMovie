@@ -6,6 +6,31 @@
     background-position: center;
     background-position-y: top;
 }
+.modal-bg{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+.modal-container{
+    display: flex;
+    flex-direciton: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.leftArrow, .rightArrow{
+    color: white;
+    font-size: 72px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.modal{
+    height: 75%;
+    background-color: white;
+}
 .container{
     position: fixed;
     top: 150px;
