@@ -23,6 +23,7 @@
     top: 0;
     left: 0;
     width: 110%;
+    pointer-events: none;
     animation: smoke 15s infinite ease-in-out;
     transform: translateX(-2.5%);
 }

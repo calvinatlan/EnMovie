@@ -24,7 +24,7 @@ export class InspirationComponent implements AfterViewInit{
         let r = (Math.random() * 3);
         r -= r%1;
         this.toggleLightning(r);
-        let n = ((Math.random() * 5) + 5) * 1000;
+        let n = ((Math.random() * 5) + 3) * 1000;
         setTimeout(this.startLightning.bind(this), n);
     }
 

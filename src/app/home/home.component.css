@@ -43,10 +43,23 @@ a>img:hover{
     animation: fadeout 5s ease-in-out 1s 1, fadein 5s ease-in-out 15s 1;
     animation-fill-mode: forwards;
 }
+.adventurous{
+    position: fixed;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 10s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+}
 .en-logo{
     position: fixed;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     animation-name: fadein;
     animation-delay: 10s;
