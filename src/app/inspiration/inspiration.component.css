@@ -6,6 +6,9 @@
     background-position: center;
     background-position-y: top;
 }
+.bg.lightning{
+    background-image: url("../../assets/background/inspiration2.png");
+}
 .modal-bg{
     position:fixed;
     height: 100%;
@@ -15,17 +18,13 @@
 }
 .modal-container{
     display: flex;
-    flex-direciton: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-}
-.leftArrow, .rightArrow{
     color: white;
-    font-size: 72px;
-    margin: 0 15px;
-    cursor: pointer;
+    text-transform: uppercase;
 }
 .modal{
     height: 75%;
@@ -54,7 +53,7 @@ img.inspiration{
     width: 150px;
 }
 .links>img{
-    cursor: pointer;
+    cursor: pointer !important;
 }
 img.en{
     margin-right: 4%;
@@ -76,8 +75,10 @@ img.villagers{
     display: block;
     width: 75px;
 }
-div.environment{
+div.environment:hover{
     cursor: pointer;
+}
+div.environment{
     display: block;
     margin-right: 1%;
     margin-left: 5%;

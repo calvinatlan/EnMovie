@@ -18,3 +18,15 @@
     left: 30px;
     height: 17px;
 }
+.smoke{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    animation: smoke 15s infinite ease-in-out;
+    transform: translateX(-2.5%);
+}
+@keyframes smoke{
+    25%{transform: translateX(0%)}
+    75%{transform: translateX(-5%)}
+}

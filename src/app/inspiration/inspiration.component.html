@@ -1,11 +1,10 @@
 <div class="modal-bg" *ngIf="modalActive" (click)="exit()">
     <div class="modal-container">
-        <div class="leftArrow" (click)="decrement($event)"> < </div>
+        <div *ngIf="instructions">Click the image to move forward</div>
         <img class="modal" [src]="'assets/inspiration/'+category+'/'+index+'.jpg'" (click)="increment($event)" />
-        <div class="rightArrow" (click)="increment($event)"> > </div>
     </div>
 </div>
-<div class="bg">
+<div class="bg" #bg>
     <app-nav-bar></app-nav-bar>
     <app-en-logo></app-en-logo>
     <div class="container">
