@@ -11,8 +11,20 @@
     max-width: 50%;
     z-index: 1;
     animation: fadeout 3s linear 1 3s forwards;
+    pointer-events: none;
+}
+div.vd-title{
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+div.vd-title>img{
 }
 @keyframes fadeout{
-    0%{opacity: 1}
-    100%{opacity: 0}
+    0%{opacity: 1; display: block;}
+    100%{opacity: 0; display: none;}
 }

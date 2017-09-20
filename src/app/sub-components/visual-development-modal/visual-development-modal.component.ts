@@ -28,13 +28,53 @@ export class VisualDevelopmentModalComponent implements OnInit {
 
     currStep = 0;
 
-  constructor() { }
+    active = true;
+    timeElapsed = 8001;
 
-  ngOnInit() {
-      setInterval( () => {
-          this.currStep++;
-          this.currStep = this.currStep % 10;
-      }, 8000);
-  }
+    interval;
+    interval2;
 
+    constructor() { }
+
+    pausePlay(){
+        if(this.active){
+            this.clearAllIntervals();
+            this.active = false;
+        }else{
+            this.active = true;
+            this.clearAllIntervals();
+            this.interval = setTimeout( () => {
+                this.increaseStep();
+                this.ngOnInit();
+            }, this.timeElapsed);
+            this.interval2 = setInterval( () => {
+                this.timeElapsed -= 100;
+            }, 100);
+        }
+    }
+
+    clearAllIntervals(){
+        clearInterval(this.interval);
+        clearInterval(this.interval2);
+        this.interval = null;
+        this.interval2 = null;
+    }
+
+    ngOnInit() {
+        this.active = true;
+        this.clearAllIntervals();
+        this.timeElapsed = 8001;
+        this.interval = setInterval( () => {
+            this.timeElapsed = 8001;
+            this.increaseStep();
+        }, 8000);
+        this.interval2 = setInterval( () => {
+            this.timeElapsed -= 100;
+        }, 100);
+    }
+
+    increaseStep(){
+        this.currStep++;
+        this.currStep = this.currStep % 10;
+    }
 }
