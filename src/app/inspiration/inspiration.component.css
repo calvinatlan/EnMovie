@@ -38,7 +38,7 @@
 }
 img.inspiration{
     display: block;
-    margin-left: 50%;
+    margin-left: 49%;
     transform: translateX(-50%);
     width: 500px;
 }
@@ -51,7 +51,7 @@ img.inspiration{
     height: 300px;
 }
 .empty{
-    width: 150px;
+    width: 0px;
 }
 .links>img{
     cursor: pointer;
@@ -80,7 +80,7 @@ div.environment{
     cursor: pointer;
     display: block;
     margin-right: 1%;
-    margin-left: 5%;
+    margin-left: 3%;
     height: 100%;
 }
 img.environment{

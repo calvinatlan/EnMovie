@@ -4,17 +4,27 @@
     background-image: url("../../assets/background/presentation.png");
     background-size: cover;
     background-position: right;
-    background-position-y: bottom;
+    background-position-y: center;
 }
 .credits{
     position: fixed;
-    top: 20px;
+    bottom: 68px;
     left: 30px;
     height: 75px;
 }
 .credits2{
     position: fixed;
-    top: 95px;
+    bottom: 45px;
     left: 30px;
     height: 25px;
+}
+
+
+@media (min-width: 2450px) {
+    .credits{
+        top: 56px;
+    }
+    .credits2{
+        top: 130px;
+    }
 }
