@@ -8,23 +8,29 @@
 }
 .credits{
     position: fixed;
-    bottom: 68px;
+    bottom: 30px;
     left: 30px;
     height: 75px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 11px;
+    padding-bottom: 38px;
 }
 .credits2{
     position: fixed;
     bottom: 45px;
     left: 30px;
     height: 25px;
+    margin-left: 12px;
 }
 
 
 @media (min-width: 2450px) {
     .credits{
+        bottom: inherit;
         top: 56px;
     }
     .credits2{
-        top: 130px;
+        bottom: inherit;
+        top: 141px;
     }
 }
