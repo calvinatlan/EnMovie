@@ -10,8 +10,23 @@
     transform: translate(-50%, -50%);
     max-width: 50%;
     z-index: 5;
-    animation: fadeout 3s linear 1 3s forwards;
+    animation: fadeout 5s ease-in-out 1s 1;
+    animation-fill-mode: forwards;
 }
+.cover{
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    animation-name: fadeout;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation: fadeout 5s ease-in-out 1s 1; /*, fadein 5s ease-in-out 15s 1; */
+    animation-fill-mode: forwards;
+}
+
 @keyframes fadein{
     0% {opacity: 0;}
     100% {opacity: 1;}
