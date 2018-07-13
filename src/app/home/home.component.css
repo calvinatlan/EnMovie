@@ -56,8 +56,8 @@ a>img:hover{
 }
 .home-card{
     position: fixed;
-    right: 7%;
-    bottom: 2%;
+    left: -108px;
+    bottom: 25px;
     transform: translateX(50%);
     opacity: 0;
     animation-name: fadein;
@@ -65,7 +65,7 @@ a>img:hover{
     animation-duration: 3s;
     animation-fill-mode: forwards;
     z-index: 5;
-    height: 2.5%;
+    height: 35px;
 }
 .fire{
     top: -10px;
