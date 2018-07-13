@@ -8,6 +8,7 @@ img:hover{
 
 .navbar{
     z-index: 1;
+    text-align: center;
 }
 
 /*Vertical*/
@@ -83,7 +84,7 @@ img:hover{
     margin-bottom: 85px;
 } */
 .hor>.navbar>a>img{
-    margin-bottom: 85px;
+    margin-bottom: 0px;
 }
 a.contact{
     z-index: 2;

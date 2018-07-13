@@ -26,7 +26,7 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
 })
 export class VisualDevelopmentModalComponent implements OnInit {
 
-    currStep = 0;
+    currStep = 9;
 
   constructor() { }
 

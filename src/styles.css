@@ -4,3 +4,11 @@ body {
     height: 100%;
     background-color: black;
 }
+app-all-images p {
+    display: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+
+}

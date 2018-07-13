@@ -9,10 +9,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 50%;
-    z-index: 5;
-    animation: fadeout 5s ease-in-out 1s 1;
+    opacity: 0;
+    z-index: 1;
+    animation: fadein 3s ease-in-out 10s 1, fadeout 3s ease-in-out 13s 1;
     animation-fill-mode: forwards;
 }
+
 .cover{
     position: fixed;
     background-color: black;
@@ -20,13 +22,32 @@
     width: 100%;
     z-index: 1;
     animation-name: fadeout;
-    animation-delay: 1s;
+    animation-delay: 10s;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation: fadeout 5s ease-in-out 1s 1; /*, fadein 5s ease-in-out 15s 1; */
+    animation: fadeout 5s ease-in-out 7.5s 1; /*, fadein 5s ease-in-out 15s 1; */
     animation-fill-mode: forwards;
 }
-
+.vd-scroll {   
+    position: fixed;
+    transform: translateX(0%);
+    height: 125%;
+    top: -10%;
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation: fadein 5s ease-in-out 1s 1, scroll 7s ease-in-out 1s 1, fadeout 3s ease-in-out 6s 1;
+    animation-fill-mode: forwards;
+}
+div.vd-title {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+}
 @keyframes fadein{
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -34,4 +55,7 @@
 @keyframes fadeout{
     0%{opacity: 1}
     100%{opacity: 0}
+}
+@keyframes scroll{
+    100% {transform: translateX(-32%);}
 }
