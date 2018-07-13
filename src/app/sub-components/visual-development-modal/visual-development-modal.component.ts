@@ -26,15 +26,15 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
 })
 export class VisualDevelopmentModalComponent implements OnInit {
 
-    currStep = 9;
+    currStep = 7;
 
   constructor() { }
 
   ngOnInit() {
       setInterval( () => {
           this.currStep++;
-          this.currStep = this.currStep % 10;
-      }, 8000);
+          this.currStep = this.currStep % 12;
+      }, 8150);
   }
 
 }

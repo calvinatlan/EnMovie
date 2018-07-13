@@ -15,6 +15,19 @@
     animation-fill-mode: forwards; */
 }
 
+.vd-card{
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+    z-index: 1;
+    animation-name: fadein;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    height: 3.75%;
+}
+
 .cover{
     position: fixed;
     background-color: black;
@@ -25,7 +38,7 @@
     animation-delay: 10s;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation: fadeout 5s ease-in-out 47.5s 1; /*, fadein 5s ease-in-out 15s 1; */
+    animation: fadeout 5s ease-in-out 44.5s 1; /*, fadein 5s ease-in-out 15s 1; */
     animation-fill-mode: forwards;
 }
 .vd-scroll {   
@@ -46,13 +59,199 @@
     transform: translateX(0%);
     height: 100%;
     top: 0%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     opacity: 0;
     animation-name: fadein;
     animation-delay: 3s;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    animation: fadein 3s ease-in-out 18.5s 1, scroll 13s ease-in-out 21.5s 1, fadeout 3s ease-in-out 34.5s 1;
+    animation: fadein 3s ease-in-out 18.5s 1, scroll2 16s ease-in-out 18.5s 1, fadeout 3s ease-in-out 35.5s 1;
     animation-fill-mode: forwards;
+}
+
+.vd-moon {
+    position: absolute;
+    transform: translateX(0%);
+    height: 45%;
+    top: 19%;
+    right: 50%;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 18.5s 1, moondrift 50s linear 18.5s 1, fadeout 3s ease-in-out 32.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.vd-moon2 {
+    position: absolute;
+    transform: translateX(0%);
+    height: 8%;
+    top: 40%;
+    right: 46%;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 18.5s 1, moondrift2 13s linear 18.5s 1, fadeout 3s ease-in-out 32.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.vd-small-star {
+    position: absolute;
+    transform: translateX(0%);
+    height: 1.5%;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 18.5s 1, stardrift 13s linear 18.5s 1, fadeout 3s ease-in-out 32.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+.vd-big-star {
+    position: absolute;
+    transform: translateX(0%);
+    height: 2.5%;
+    top: 50%;
+    right: 25%;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 18.5s 1, stardrift 20s linear 18.5s 1, fadeout 3s ease-in-out 32.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+img#s1 {
+    top: 6%;
+    right: 10%;
+}
+img#s2 {
+    top: 38%;
+    right: 89%;
+}
+img#s3 {
+    top: 75%;
+    right: 65%;
+}
+.vd-back-clouds {
+    position: absolute;
+    transform: translateX(0%);
+    height: 50%;
+    top: 19%;
+    right: 40px;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 18.5s 1, backclouddrift 16s linear 18.5s 1, fadeout 3s ease-in-out 32.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.vd-earth {
+    position: absolute;
+    transform: translateX(0%);
+    height: 50%;
+    top: 67%;
+    right: -144px;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 18.5s 1, earthdrift 16s linear 18.5s 1, fadeout 3s ease-in-out 32.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.vd-big-face {
+    position: fixed;
+    transform: translateX(0%);
+    height: 100%;
+    top: 0;
+    left: 25%;
+    right: 0;
+    margin: 0 auto;
+    transform: scale(6);
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 2s ease-in-out 30s 1, scaledown 3s linear 33s 1, fadeout 0.5s linear 35.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+.vd-full-face {
+    position: fixed;
+    transform: scale(7.5);
+    height: 100%;
+    top: -85%;
+    left: 0%;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 0.5s linear 35.5s 1, finalposition 5s ease-out 35.5s, fadeout 3s ease-in-out 40.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 2;
+
+}
+
+.vd-face-shadow {
+    position: fixed;
+    transform: scale(3);
+    height: 100%;
+    top: -20.7%;
+    left: -1%;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 2s linear 38.5s 1, shadow 2s ease-out 38.5s 1, fadeout 2s ease-out 44.5s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+.vd-glow-face {
+    position: fixed;
+    transform: scale(0.447);
+    height: 100%;
+    top: -20.7%;
+    left: -2%;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation: fadein 3s linear 40.5s 1, fadeout 2s ease-out 44.5s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+.vd-final-splash {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    opacity: 0;
+    background-image: url('../../assets/vd-intro/FINAL-SPLASH.png');
+    background-repeat: no-repeat;
+    animation-name: fadein;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 35.5s 1, fadeout 3s ease-in-out 44.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 div.vd-title {
@@ -63,13 +262,44 @@ div.vd-title {
     transform: translate(-50%, -100%);
 }
 @keyframes fadein{
-    0% {opacity: 0;}
     100% {opacity: 1;}
 }
+@keyframes fadeinlight{
+    100% {opacity: 0.35;}
+}
 @keyframes fadeout{
-    0%{opacity: 1}
     100%{opacity: 0}
+}
+@keyframes backclouddrift{
+    100% {transform: translateX(-20%);}
+}
+@keyframes stardrift{
+    100% {transform: translateX(-1133%);}
+}
+@keyframes moondrift{
+    100% {transform: translateX(-100%);}
+}
+@keyframes moondrift2{
+    100% {transform: translateX(-200%);}
+}
+@keyframes earthdrift{
+    100% {transform: translateX(30%);}
 }
 @keyframes scroll{
     100% {transform: translateX(-32%);}
+}
+@keyframes scroll2{
+    100% {transform: translateX(-20%);}
+}
+@keyframes scaledown{
+    100% {transform: scale(1.2); left: 0%;}
+}
+@keyframes scaledown2{
+    100% {transform: scale(1);}
+}
+@keyframes finalposition{
+    100% {transform: scale(0.325); left: 0%; top: -22%;}
+}
+@keyframes shadow{
+    100% {transform: scale(0.447); }
 }

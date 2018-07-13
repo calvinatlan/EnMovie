@@ -54,6 +54,19 @@ a>img:hover{
     animation-fill-mode: forwards;
     z-index: 5;
 }
+.home-card{
+    position: fixed;
+    right: 7%;
+    bottom: 2%;
+    transform: translateX(50%);
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    height: 2.5%;
+}
 .fire{
     top: -10px;
     z-index: 6;
