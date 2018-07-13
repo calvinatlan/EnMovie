@@ -34,7 +34,7 @@ export class VisualDevelopmentModalComponent implements OnInit {
       setInterval( () => {
           this.currStep++;
           this.currStep = this.currStep % 12;
-      }, 8150);
+      }, 8200);
   }
 
 }
