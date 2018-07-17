@@ -10,16 +10,16 @@
     position: fixed;
     bottom: 30px;
     left: 30px;
-    height: 75px;
+    height: 60px;
     background-color: rgba(0,0,0,0.4);
     padding: 11px;
-    padding-bottom: 38px;
+    padding-bottom: 33px;
 }
 .credits2{
     position: fixed;
     bottom: 45px;
     left: 30px;
-    height: 25px;
+    height: 18.5px;
     margin-left: 12px;
 }
 .smoke{
@@ -38,11 +38,12 @@
 @media (min-width: 2450px) {
     .credits{
         bottom: inherit;
+        padding-bottom: 30px;
         top: 56px;
     }
     .credits2{
         bottom: inherit;
-        top: 141px;
+        top: 127px;
     }
 }
 
