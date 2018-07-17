@@ -18,21 +18,17 @@ img.tiny{
     width: 1px;
     height: 1px;
 }
-
-.paused {
+.paused{
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     max-width: 50%;
     z-index: 1;
     pointer-events: none;
-    -webkit-animation: fadeout 3s linear 5s 1 forwards;
-    animation: fadeout 3s linear 5s 1 forwards;
+    animation: fadeout 3s linear 1 forwards;
 }
-
 @keyframes fadeout{
-    0% {opacity: 1;}
-    100% {opacity: 0;}
+    0%{opacity: 1; display: block;}
+    100%{opacity: 0; display: none;}
 }

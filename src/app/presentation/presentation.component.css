@@ -22,7 +22,19 @@
     height: 25px;
     margin-left: 12px;
 }
-
+.smoke{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    pointer-events: none;
+    animation: smoke 15s infinite ease-in-out;
+    transform: translateX(-2.5%);
+}
+@keyframes smoke{
+    25%{transform: translateX(0%)}
+    75%{transform: translateX(-5%)}
+}
 @media (min-width: 2450px) {
     .credits{
         bottom: inherit;
@@ -33,3 +45,4 @@
         top: 141px;
     }
 }
+

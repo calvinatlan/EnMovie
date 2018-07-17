@@ -6,6 +6,9 @@
     background-position: center;
     background-position-y: top;
 }
+.bg.lightning{
+    background-image: url("../../assets/background/inspiration2.png");
+}
 .modal-bg{
     position:fixed;
     height: 100%;
@@ -15,7 +18,7 @@
 }
 .modal-container{
     display: flex;
-    flex-direciton: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -26,6 +29,7 @@
     font-size: 72px;
     margin: 0 15px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .modal{
     height: 75%;
@@ -53,8 +57,9 @@ img.inspiration{
 .empty{
     width: 0px;
 }
+
 .links>img{
-    cursor: pointer;
+    cursor: pointer !important;
 }
 img.en{
     margin-right: 4%;

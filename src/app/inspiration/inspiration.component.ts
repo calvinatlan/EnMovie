@@ -1,23 +1,45 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-inspiration',
   templateUrl: './inspiration.component.html',
   styleUrls: ['./inspiration.component.css']
 })
-export class InspirationComponent implements OnInit {
+export class InspirationComponent implements AfterViewInit{
 
     modalActive = false;
     category = '';
     index = 0;
     indexMax = 0;
+    instructions = true;
+    @ViewChild('bg') bg;
 
     constructor() { }
 
-    ngOnInit() {
+    ngAfterViewInit() {
+        setTimeout(this.startLightning.bind(this),2000);
+    }
+
+    startLightning(){
+        let r = (Math.random() * 3);
+        r -= r%1;
+        this.toggleLightning(r);
+        let n = ((Math.random() * 5) + 3) * 1000;
+        setTimeout(this.startLightning.bind(this), n);
+    }
+
+    toggleLightning(n){
+        if(n >= 0){
+            this.bg.nativeElement.className = 'bg lightning';
+            setTimeout(function(){
+                this.bg.nativeElement.className = 'bg';
+                setTimeout(this.toggleLightning.bind(this,n-1),150);
+            }.bind(this),150);
+        }
     }
 
     openModal(event){
+        this.instructions = true;
         let category = event.target.className;
         this.category = category;
         this.modalActive = true;
@@ -38,16 +60,8 @@ export class InspirationComponent implements OnInit {
         }
     }
 
-    decrement(event){
-        event.stopPropagation();
-        if(this.index == 1){
-            this.index = this.indexMax;
-        }else{
-            this.index--;
-        }
-    }
-
     increment(event){
+        this.instructions = false;
         event.stopPropagation();
         if(this.index == this.indexMax){
             this.index = 0;
