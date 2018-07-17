@@ -67,7 +67,7 @@
     animation-delay: 3s;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    animation: fadein 3s ease-in-out 18.5s 1, scroll2 16s ease-in-out 18.5s 1, fadeout 3s ease-in-out 35.5s 1;
+    animation: fadein 3s ease-in-out 18.5s 1, scroll2 16s ease-in-out 18.5s 1, fadeout 3s ease-in-out 35.25s 1;
     animation-fill-mode: forwards;
 }
 
@@ -214,7 +214,7 @@ img#s3 {
     opacity: 0;
     animation-name: fadein;
     animation-iteration-count: 1;
-    animation: fadein 2s linear 38.5s 1, shadow 2s ease-out 38.5s 1, fadeout 2s ease-out 44.5s;
+    animation: fadein 5s linear 38.5s 1, shadow 2s ease-out 38.5s 1, fadeout 2s ease-out 44.5s;
     animation-fill-mode: forwards;
     z-index: 2;
 }
@@ -249,7 +249,7 @@ img#s3 {
     animation-delay: 3s;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    animation: fadein 3s ease-in-out 35.5s 1, fadeout 3s ease-in-out 44.5s 1;
+    animation: fadein 3s ease-in-out 35.25s 1, fadeout 3s ease-in-out 44.5s 1;
     animation-fill-mode: forwards;
     z-index: 1;
 }

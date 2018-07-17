@@ -1,4 +1,4 @@
-.bg{
+ .bg{
     height: 100%;
     width: 100%;
     background-image: url("../../assets/background/contact.png");
@@ -6,7 +6,7 @@
     background-position: center;
     background-position-y: top;
 }
-
+/*
 img{
     position: fixed;
 }
@@ -16,7 +16,9 @@ img.olivier{
     width: 30%;
     transform: translate(-50%, -50%);
 }
+ */
 img.calvin{
+    position: fixed;
     left: 15px;
     bottom: 9px;
     width: 200px;
@@ -47,12 +49,6 @@ div.olivier{
 }
 .olivier>.LA{
     margin-top: 50px;
-}
-img.calvin{
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-    width: 10%;
 }
 img.explosion{
     position: fixed;
