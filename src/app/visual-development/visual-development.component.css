@@ -38,7 +38,7 @@
     animation-delay: 10s;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation: fadeout 5s ease-in-out 44.5s 1; /*, fadein 5s ease-in-out 15s 1; */
+    animation: fadeout 5s ease-in-out 44.5s 1, displaynone 3s linear 46s 1;
     animation-fill-mode: forwards;
 }
 .vd-scroll {   
@@ -48,7 +48,6 @@
     top: -10%;
     opacity: 0;
     animation-name: fadein;
-
     animation-iteration-count: 1;
     animation: fadein 5s ease-in-out 6.85s 1, scroll 13s ease-in-out 7.5s 1, fadeout 3s ease-in-out 18.5s 1;
     animation-fill-mode: forwards;
@@ -260,6 +259,12 @@ div.vd-title {
     left: 50%;
     -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
+    animation-name: fadein;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 46.5s 1, fadeout 3s ease-in-out 51.5s 1;
+    animation-fill-mode: forwards;
 }
 @keyframes fadein{
     100% {opacity: 1;}
@@ -302,4 +307,7 @@ div.vd-title {
 }
 @keyframes shadow{
     100% {transform: scale(0.447); }
+}
+@keyframes displaynone{
+    100% {visibility: hidden; }
 }
