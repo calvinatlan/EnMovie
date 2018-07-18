@@ -19,7 +19,7 @@ a{
 a>img{
     display:block;
     margin: 0 auto;
-    width: 150px;
+    width: 125px;
 }
 a>img:hover{
     transform: scale(1.1);
