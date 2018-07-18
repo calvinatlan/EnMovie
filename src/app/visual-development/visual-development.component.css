@@ -38,7 +38,7 @@
     animation-delay: 10s;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation: fadeout 5s ease-in-out 44.5s 1, displaynone 3s linear 46s 1;
+    animation: fadeout 5s ease-in-out 44.5s 1, displaynone 5s linear 44.5s 1;
     animation-fill-mode: forwards;
 }
 .vd-scroll {   
@@ -69,6 +69,56 @@
     animation: fadein 3s ease-in-out 18.5s 1, scroll2 16s ease-in-out 18.5s 1, fadeout 3s ease-in-out 35.25s 1;
     animation-fill-mode: forwards;
 }
+
+.vd-pod{
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: scale(0.00125);
+    animation: zoom 34s ease-in-out 19s 1;
+}
+.vd-pod img{
+    position: absolute;
+}
+.vd-pod div{
+    transform:translate(900%,-900%);
+    position: relative;
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation: fadein 0.5s linear 14s 1, falling 30s linear 15s 1, fadeout 0.5s linear 35.0s 1;
+    animation-fill-mode: forwards;
+}
+.vd-pod .vd-body{
+    z-index: 10;
+    animation: spinning 3s 0s infinite linear;
+    transform-origin: 83px 214px;
+}
+.vd-pod .vd-body, .vd-pod .vd-streak{
+    bottom: 0;
+    left: 0;
+}
+.vd-pod .vd-streak{
+    z-index: 9;
+    transform: translate(50px,-120px);
+}
+@keyframes falling{
+    0%{transform:translate(900%,-900%)}
+    100%{transform:translate(-3000%,1500%)}
+}
+@keyframes spinning{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+@keyframes zoom{
+    0%{transform: scale(0.00125)}
+    100%{transform: scale(0.25)}
+}
+
 
 .vd-moon {
     position: absolute;
@@ -204,7 +254,7 @@ img#s3 {
 
 .vd-face-shadow {
     position: fixed;
-    transform: scale(3);
+    transform: scale(2.56);
     height: 100%;
     top: -20.7%;
     left: -1%;
@@ -222,8 +272,8 @@ img#s3 {
     position: fixed;
     transform: scale(0.447);
     height: 100%;
-    top: -20.7%;
-    left: -2%;
+    top: -20.5%;
+    left: -1.5%;
     right: 0;
     margin: 0 auto;
     opacity: 0;
@@ -273,7 +323,7 @@ div.vd-title {
     100% {opacity: 0.35;}
 }
 @keyframes fadeout{
-    100%{opacity: 0}
+    100%{opacity: 0;}
 }
 @keyframes backclouddrift{
     100% {transform: translateX(-20%);}

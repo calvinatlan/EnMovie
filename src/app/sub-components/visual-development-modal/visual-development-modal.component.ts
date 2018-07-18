@@ -29,7 +29,7 @@ export class VisualDevelopmentModalComponent implements OnInit {
     currStep = 7;
 
     active = true;
-    timeElapsed = 9200;
+    timeElapsed = 9100;
 
     interval;
     interval2;
@@ -63,11 +63,11 @@ export class VisualDevelopmentModalComponent implements OnInit {
     ngOnInit() {
         this.active = true;
         this.clearAllIntervals();
-        this.timeElapsed = 9201;
+        this.timeElapsed = 9101;
         this.interval = setInterval( () => {
-            this.timeElapsed = 9201;
+            this.timeElapsed = 9101;
             this.increaseStep();
-        }, 9200);
+        }, 9100);
         this.interval2 = setInterval( () => {
             this.timeElapsed -= 100;
         }, 100);
