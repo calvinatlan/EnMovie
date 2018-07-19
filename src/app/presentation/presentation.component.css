@@ -30,6 +30,7 @@
     pointer-events: none;
     animation: smoke 15s infinite ease-in-out;
     transform: translateX(-2.5%);
+    filter: blur(10px);
 }
 @keyframes smoke{
     25%{transform: translateX(0%)}
