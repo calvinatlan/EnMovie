@@ -2,20 +2,28 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-color: black;
     object-fit: contain;
+    margin-top: 4%;
 }
 .vd>img{
     margin: 0 auto;
     display: block;
     max-width: 100%;
     max-height: 100%;
+    animation-name: fadein;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation: fadein 3s ease-in-out 46.5s 1;
+    animation-fill-mode: forwards;
 }
 
 img.tiny{
     width: 1px;
     height: 1px;
+    visibility: hidden;
 }
 .paused{
     position: absolute;
@@ -28,6 +36,10 @@ img.tiny{
     animation: fadeout 3s linear 1 forwards;
 }
 @keyframes fadeout{
-    0%{opacity: 1; display: block;}
-    100%{opacity: 0; display: none;}
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes fadein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }

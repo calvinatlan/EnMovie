@@ -43,6 +43,7 @@ a>img:hover{
     animation: fadeout 5s ease-in-out 1s 1, fadein 5s ease-in-out 15s 1;
     animation-fill-mode: forwards;
 }
+
 .adventurous{
     position: fixed;
     left: 50%;
@@ -55,6 +56,21 @@ a>img:hover{
     animation-fill-mode: forwards;
     z-index: 5;
 }
+
+.home-card{
+    position: fixed;
+    left: -108px;
+    bottom: 25px;
+    transform: translateX(50%);
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    height: 35px;
+}
+
 .en-logo{
     position: fixed;
     left: 50%;

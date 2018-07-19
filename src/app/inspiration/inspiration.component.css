@@ -23,7 +23,12 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+.leftArrow, .rightArrow{
     color: white;
+    font-size: 72px;
+    margin: 0 15px;
+    cursor: pointer;
     text-transform: uppercase;
 }
 .modal{
@@ -37,7 +42,7 @@
 }
 img.inspiration{
     display: block;
-    margin-left: 50%;
+    margin-left: 49%;
     transform: translateX(-50%);
     width: 500px;
 }
@@ -50,8 +55,9 @@ img.inspiration{
     height: 300px;
 }
 .empty{
-    width: 150px;
+    width: 0px;
 }
+
 .links>img{
     cursor: pointer !important;
 }
@@ -75,13 +81,11 @@ img.villagers{
     display: block;
     width: 75px;
 }
-div.environment:hover{
-    cursor: pointer;
-}
 div.environment{
+    cursor: pointer;
     display: block;
     margin-right: 1%;
-    margin-left: 5%;
+    margin-left: 3%;
     height: 100%;
 }
 img.environment{

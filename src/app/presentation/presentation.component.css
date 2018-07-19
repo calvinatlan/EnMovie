@@ -4,19 +4,23 @@
     background-image: url("../../assets/background/presentation.png");
     background-size: cover;
     background-position: right;
-    background-position-y: bottom;
+    background-position-y: center;
 }
 .credits{
     position: fixed;
-    top: 20px;
+    bottom: 30px;
     left: 30px;
-    height: 50px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 11px;
+    padding-bottom: 33px;
 }
 .credits2{
     position: fixed;
-    top: 70px;
+    bottom: 45px;
     left: 30px;
-    height: 17px;
+    height: 18.5px;
+    margin-left: 12px;
 }
 .smoke{
     position: fixed;
@@ -24,10 +28,28 @@
     left: 0;
     width: 110%;
     pointer-events: none;
-    animation: smoke 15s infinite ease-in-out;
+    filter: blur(14px) drop-shadow(8);
+    animation: smoke 15s infinite ease-in-out, blur 8s infinite ease-in-out;
     transform: translateX(-2.5%);
+
 }
 @keyframes smoke{
-    25%{transform: translateX(0%)}
-    75%{transform: translateX(-5%)}
+    25%{transform: translateX(0%); filter: blur(19px);}
+    75%{transform: translateX(-5%); filter: blur(8px);}
 }
+@keyframes blur{
+    25%{ filter: blur(19px) drop-shadow(5);}
+    75%{ filter: blur(8px) drop-shadow(1);}
+}
+@media (min-width: 2450px) {
+    .credits{
+        bottom: inherit;
+        padding-bottom: 30px;
+        top: 56px;
+    }
+    .credits2{
+        bottom: inherit;
+        top: 127px;
+    }
+}
+

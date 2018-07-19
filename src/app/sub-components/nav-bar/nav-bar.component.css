@@ -1,5 +1,6 @@
 img{
-    width: 75px;
+    height: 20px;
+    margin-right: 10px;
 }
 img:hover{
     transform: scale(1.1);
@@ -7,6 +8,7 @@ img:hover{
 
 .navbar{
     z-index: 1;
+    text-align: center;
 }
 
 /*Vertical*/
@@ -25,7 +27,11 @@ img:hover{
     flex-direction: column;
     justify-content: center;
 }
-.vert>.navbar>a>img.st{
+.vert>.navbar>a>img{
+    text-align: left;
+    margin-top: 20px;
+}
+/* .vert>.navbar>a>img.st{
     margin-top: 5px;
 }
 .vert>.navbar>a>img.vd{
@@ -43,17 +49,18 @@ img:hover{
 }
 .vert>.navbar>a>img.bio{
     margin-top: 12px;
-}
+} */
 
 /*Horizontal*/
 .navbar-wrap.hor{
     position: fixed;
-    bottom: 0;
+    top: 50px;
     display: flex;
     width: 100%;
     justify-content: center;
+    z-index: 3;
 }
-.hor>.navbar>a>img.home{
+/* .hor>.navbar>a>img.home{
     margin-bottom: 100px;
 }
 .hor>.navbar>a>img.st{
@@ -75,10 +82,19 @@ img:hover{
 }
 .hor>.navbar>a>img.bio{
     margin-bottom: 85px;
+} */
+.hor>.navbar>a>img{
+    margin-bottom: 0px;
 }
 a.contact{
     z-index: 2;
 }
 a.inspiration{
     z-index: 1;
+}
+
+@media (min-width: 2450px) {
+    img{
+        height: 25px;
+    }
 }

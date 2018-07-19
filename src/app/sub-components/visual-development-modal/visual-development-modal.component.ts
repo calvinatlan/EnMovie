@@ -26,10 +26,10 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
 })
 export class VisualDevelopmentModalComponent implements OnInit {
 
-    currStep = 0;
+    currStep = 7;
 
     active = true;
-    timeElapsed = 8001;
+    timeElapsed = 9100;
 
     interval;
     interval2;
@@ -63,11 +63,11 @@ export class VisualDevelopmentModalComponent implements OnInit {
     ngOnInit() {
         this.active = true;
         this.clearAllIntervals();
-        this.timeElapsed = 8001;
+        this.timeElapsed = 9101;
         this.interval = setInterval( () => {
-            this.timeElapsed = 8001;
+            this.timeElapsed = 9101;
             this.increaseStep();
-        }, 8000);
+        }, 9100);
         this.interval2 = setInterval( () => {
             this.timeElapsed -= 100;
         }, 100);
@@ -75,6 +75,6 @@ export class VisualDevelopmentModalComponent implements OnInit {
 
     increaseStep(){
         this.currStep++;
-        this.currStep = this.currStep % 10;
+        this.currStep = this.currStep % 12;
     }
 }
